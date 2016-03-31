@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.tmp/styles/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LICENSE" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/crunchinator.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/directives/crCrunchNav.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/directives/crListSelect.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/lib/webApiFaker.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/crunch-nav.tpl.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/main.tpl.html" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

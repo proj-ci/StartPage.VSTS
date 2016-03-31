@@ -1,0 +1,15 @@
+node_modules
+dist
+.tmp
+*.swp
+.sass-cache
+vendor
+app/vendor
+build
+.DS_Store
+
+vagrant/cookbooks/*
+vagrant/tmp/*
+.vagrant
+
+app/scripts/configuration.js

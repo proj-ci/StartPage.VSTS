@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html ng-app="startpageApp" ng-controller="AppCtrl" class="ng-scope">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title ng-bind="pageTitle"></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Typekit Fonts -->
+        <script type="text/javascript" src="//use.typekit.net/rxk7mer.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- build:css({.tmp,app}) styles/main.css -->
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/boilerplate.css">
+        <!-- endbuild -->
+
+        <link rel="icon" href="images/favicon.png" />
+
+        <!--[if lt IE 9]>
+        <script src="vendor/es5-shim/es5-shim.js"></script>
+        <script src="vendor/json3/lib/json3.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <!-- Add your site or application content here -->
+
+        <div id="splash" role="splash" ng-cloak ng-if="!isIE && !isMobile">
+            <div class='initializing'>
+                <div class='header-text'>
+                    Slice, Filter &amp; Explore Fiancial Data
+                </div>
+            </div>
+        </div>
+
+        <div id="main" role="main" ui-view="main" ng-cloak ng-if="!isIE && !isMobile">
+        </div>
+
+        <div id="about" role="about" ui-view="about" ng-cloak ng-if="!isIE && !isMobile">
+        </div>
+
+        <footer id="footer" ng-cloak ng-if="!isIE && !isMobile">
+            <p>
+                We build new businesses for successful companies.
+            </p>
+            <ul>
+                <li>
+                    <a href='mailto:test@startpage.com?subject=Test.'>test@startpage.com</a>
+                </li>
+                <li>+91-9028909925</li>
+            </ul>
+        </footer>
+
+
+        <div class='hero' ng-cloak ng-if="isIE">
+            <div class='banner'>
+                <div class='logo'>
+                    <img src="images/logo.png"/>
+                    <h1>StartPage</h1>
+                </div>
+                <div class='message'>
+                    The StartPage does not currently support Internet Explorer due to poor Javascript performance. <br />
+                    Please check us out with
+                    <a href='https://www.google.com/intl/en/chrome/browser/'>Chrome</a>,
+                    <a href='http://www.mozilla.org/en-US/firefox/new/'>Firefox</a>,
+                    or <a href='https://www.apple.com/safari/'>Safari</a>.
+                </div>
+            </div>
+        </div>
+
+        <div class='unsupported' ng-cloak ng-if="isMobile">
+            <div class='logo'>
+                <img src="images/logo.png"/>
+                <h1>StartPage</h1>
+            </div>
+            <p>Because of screen and UI constraints, the StartPage needs to be viewed on a traditional Mac or PC</p>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <!-- build:js({.tmp,app}) scripts/libraries.js -->
+        <script src="vendor/jquery-ui/ui/jquery-ui.js"></script>
+        <script src="vendor/jquery.shapeshift/core/jquery.shapeshift.min.js"></script>
+        <script src="vendor/underscore/underscore.js"></script>
+        <script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="vendor/angular-ui-utils/modules/route/route.js"></script>
+        <script src="vendor/angular-mocks/angular-mocks.js"></script>
+        <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="vendor/d3/d3.js"></script>
+        <script src="vendor/topojson/topojson.js"></script>
+        <script src="vendor/d3-cloud/d3.layout.cloud.js"></script>
+        <script src="vendor/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+        <script src="vendor/crossfilter/crossfilter.js"></script>
+        <script src='vendor/Faker/Faker.js'></script>
+
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/configuration.js"></script>
+        <script src="scripts/lib/webApiFaker.js"></script>
+
+        <script src="scripts/services/toolBox.js"></script>
+        <script src="scripts/services/model.js"></script>
+        <script src="scripts/services/company.js"></script>
+        <script src="scripts/services/category.js"></script>
+        <script src="scripts/services/investor.js"></script>
+        <script src="scripts/services/fundingRound.js"></script>
+        <script src="scripts/services/componentData.js"></script>
+        <script src="scripts/services/browser.js"></script>
+
+        <script src="scripts/controllers/crunchinator.js"></script>
+
+        <script src="scripts/directives/crD3Bar.js"></script>
+        <script src="scripts/directives/crD3Pie.js"></script>
+        <script src="scripts/directives/crD3Area.js"></script>
+        <script src="scripts/directives/crD3Map.js"></script>
+        <script src="scripts/directives/crListSelect.js"></script>
+        <script src="scripts/directives/crDragArrange.js"></script>
+        <script src="scripts/directives/crPlaceholder.js"></script>
+        <script src="scripts/directives/crAffix.js"></script>
+        <script src="scripts/directives/crCrunchNav.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

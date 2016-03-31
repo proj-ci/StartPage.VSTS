@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - '0.10.26'
+before_script:
+  - 'npm install -g bower@1.3.4 grunt-cli'
+  - 'bower install'
+after_success:
+  - 'grunt deploy'
+env:
+  global:
+    - secure: "meEj+F76Sn2bGd9a20OFM/YckUDWO5T6ro80kAX2TnQAHRE65x/KrpauNewCgTp7q/izCf6dPBpDHmhdvKry9PfhHtX1L3e09pJD5jkvyd6oXWtljs53p26JVMEa8AUW97sstn0KZJ6d8/5L9sV2bb2Us2kgq8qe0yH9friBZlA="
+    - secure: "kfr2IwvrBP6ZkvLxD4Iy6KOoGInSLu3gr30m/DfDc4RiqOB4bYKBs1kYhO6Ur9bE0q636qBOTnKEVWLMn1yPbvrvlj78vbttWP2O0+lUGnIao8q/ZRwO0Sn3Vzb0FfTMOnRkUXh/0t0O1vRS7ibR+yRTniIxhx9PdS1Xp0SNHyE="
