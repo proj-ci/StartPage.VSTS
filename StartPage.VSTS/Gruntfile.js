@@ -454,6 +454,9 @@ module.exports = function (grunt) {
             ENV.version = version;
         }
 
+        // Use the force option for all tasks declared in the previous line
+        grunt.option('force', true);
+
         target = target || 'development';
         if (target === 'dist') {
             return grunt.task.run(['build', 'connect:dist:keepalive']);
