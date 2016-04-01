@@ -11,5 +11,3 @@ build
 vagrant/cookbooks/*
 vagrant/tmp/*
 .vagrant
-
-app/scripts/configuration.js

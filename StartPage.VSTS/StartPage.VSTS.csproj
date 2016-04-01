@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\scripts\configuration.js" />
     <Content Include="packages.config" />
     <Content Include="app\.buildignore" />
     <Content Include="app\data\us.json" />
@@ -337,7 +338,6 @@
     <Content Include="app\images\triangle_white.png" />
     <Content Include="app\index.html" />
     <Content Include="app\scripts\app.js" />
-    <Content Include="app\scripts\configuration.js" />
     <Content Include="app\scripts\controllers\crunchinator.js" />
     <Content Include="app\scripts\directives\crAffix.js" />
     <Content Include="app\scripts\directives\crCrunchNav.js" />
